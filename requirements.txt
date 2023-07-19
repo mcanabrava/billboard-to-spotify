@@ -1,0 +1,5 @@
+spotipy
+pandas
+bs4
+requests
+configparser
