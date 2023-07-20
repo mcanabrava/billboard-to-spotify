@@ -14,6 +14,14 @@ Now that my playlist was created successfully, I'll turn my computer off and enj
 
 ![results](images/results.png)
 
+If replicating the project, watch out for songs with the same name from another artist as Spotify API seems to return the songs with the most plays for that artist. It is possible to return all the songs with the same name by editing the limit on the following line of code:
+
+´´´´
+results = sp.search(q=query, type='track', limit=1)
+´´´´
+
+It will also be necessary to remove the artist_name from the search track function in this case.
+
 ## Next steps
 
 In the future, I intend to add another notebook using Spotify API directly to manually handle Authentication and improve my understanding of their API.
