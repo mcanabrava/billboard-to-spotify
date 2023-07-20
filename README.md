@@ -18,7 +18,7 @@ If replicating the project, watch out for songs with the same name from another 
 
 ```results = sp.search(q=query, type='track', limit=1)```
 
-It will also be necessary to remove the artist_name from the search track function in this case, as we are filtering by artist to make sure we are getting the correct song tracks for this project.
+It will also be necessary to remove the artist_name from the search track function in this case, as we are filtering by artist to make sure we are getting the correct song tracks for this project. The downside of this approach is that Spotify's artist names might not match with the ones captured from Billboard, and therefore a couple of songs (10% in my test sample) can get lost in the process.
 
 ## Next steps
 
